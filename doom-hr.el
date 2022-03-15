@@ -33,12 +33,6 @@
   (cl-case (calcFunc-prime num)
     (1 t)))
 
-(defun doom-hr--next-prime (num)
-  "Find the next prime number after NUM."
-  (let ((next (1+ num)))
-    (cond ((doom-hr--prime-p next) next)
-          (t (doom-hr--next-prime next)))))
-
 (defun doom-hr--date-string (day)
   "Convert a numeric DAY to a human-readable date string."
   (let* ((seconds (* 86400 day))
@@ -64,7 +58,7 @@
   (interactive)
   (thread-last
     (doom-hr--days-since-epoch)
-    (doom-hr--next-prime)
+    (calcFunc-nextprime)
     (doom-hr--date-string)
     (message "%s")))
 
