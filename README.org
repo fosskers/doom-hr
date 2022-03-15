@@ -1,0 +1,33 @@
+#+TITLE: Tools for HR Employees of Doom Emacs Incorporated
+
+Totally serious and not a joke package. Highly trained (with whips) and paid
+(with memes) employees of D.E. Inc. rely on these tools for serious business.
+You wouldn't understand.
+
+* Table of Contents :TOC_2_gh:
+- [[#installation][Installation]]
+  - [[#doom-emacs][Doom Emacs]]
+  - [[#vanilla-emacs][Vanilla Emacs]]
+- [[#usage][Usage]]
+
+* Installation
+
+** Doom Emacs
+
+Place the following in your =packages.el=:
+
+#+begin_src emacs-lisp
+(package! doom-hr
+  :recipe (:host github :repo "fosskers/doom-hr"))
+#+end_src
+
+** Vanilla Emacs
+
+Install Doom and then follow the above instructions.
+
+* Usage
+
+There are two main commands:
+
++ ~doom-hr-today~: Determine which system you must use today (or you will be fired).
++ ~doom-hr-next-windows-day~: The soonest date you must boot into Windows and play Minesweeper.
