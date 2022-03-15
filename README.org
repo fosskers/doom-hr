@@ -1,4 +1,4 @@
-#+TITLE: Tools for HR Employees of Doom Emacs Incorporated
+#+TITLE: HR Tools for Doom Emacs Incorporated
 
 Totally serious and not a joke package. Highly trained (with whips) and paid
 (with memes) employees of D.E. Inc. rely on these tools for serious business.
